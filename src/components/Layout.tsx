@@ -2,6 +2,7 @@ import { Link, Outlet, useLocation } from 'react-router-dom';
 import { MonitorPlay, Heart, FileText, Menu, X, Globe, Sparkles } from 'lucide-react';
 import { useState } from 'react';
 import { useTranslation } from 'react-i18next';
+import EdulogiaLogo from './EdulogiaLogo';
 
 export default function Layout() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -27,8 +28,8 @@ export default function Layout() {
           <div className="flex justify-between items-center h-20">
             {/* Logo */}
             <Link to="/" className="flex items-center gap-2 group">
-              <div className="bg-brand-yellow p-2 rounded-2xl chunky-box chunky-hover transition-transform">
-                <MonitorPlay className="w-6 h-6 text-slate-900" />
+              <div className="bg-brand-yellow p-1 rounded-2xl chunky-box chunky-hover transition-transform flex items-center justify-center">
+                <EdulogiaLogo size={36} />
               </div>
               <span className="font-display font-bold text-2xl text-slate-900 tracking-tight ml-2">
                 Edu<span className="text-brand-pink">logia</span>
