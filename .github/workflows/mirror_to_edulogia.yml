@@ -20,5 +20,5 @@ jobs:
       - name: Push to Organization Repository
         run: |
           # Push all branches and tags to the destination, forcing updates to match exactly
-          git push "https://${{ secrets.EDULOGIA_ORG_REPO_PAT }}@github.com/edulogia/eduloga.git" --all --force
+          git push "https://${{ secrets.EDULOGIA_ORG_REPO_PAT }}@github.com/edulogia/edulogia.git" --all --force
           git push "https://${{ secrets.EDULOGIA_ORG_REPO_PAT }}@github.com/edulogia/edulogia.git" --tags --force
