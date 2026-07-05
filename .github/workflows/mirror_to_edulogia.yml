@@ -1,0 +1,26 @@
+name: Mirror to Organization
+
+# This triggers the action on any push to any branch, and allows manual triggering.
+# Manually added
+
+on:
+  push:
+    branches: [ "**" ]
+  tags:
+    - '*'
+  workflow_dispatch:
+
+jobs:
+  mirror-repo:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Source Repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0 # Important: Fetches all history for all branches and tags
+
+      - name: Push to Organization Repository
+        run: |
+          # Push all branches and tags to the destination, forcing updates to match exactly
+          git push "https://${{ secrets.EDULOGIA_ORG_REPO_PAT }}@github.com/edulogia/eduloga.git" --all --force
+          git push "https://${{ secrets.EDULOGIA_ORG_REPO_PAT }}@github.com/edulogia/edulogia.git" --tags --force

@@ -1,0 +1,49 @@
+{
+  "layout": {
+    "nav": {
+      "home": "Home",
+      "about": "About",
+      "blog": "Blog",
+      "resources": "Resources",
+      "get_started": "Get Started"
+    },
+    "footer": {
+      "description": "A non-profit initiative helping parents navigate the digital world, balancing technology use with healthy educational practices.",
+      "quick_links": "Quick Links",
+      "blog": "Our Blog",
+      "guides": "Downloadable Guides",
+      "tutorials": "Tutorials",
+      "connect": "Connect",
+      "connect_desc": "Get the latest resources and articles sent to your inbox.",
+      "email_placeholder": "Email address",
+      "join": "Join",
+      "copyright": "© {{year}} Edulogia. All rights reserved."
+    }
+  },
+  "home": {
+    "hero": {
+      "badge": "Empowering digital families",
+      "title_balance": "Welcome to ",
+      "title_tech": "Edulogia",
+      "title_with": "",
+      "description": "<strong>Parents</strong> are their children's <strong>most important educators</strong>, but finding the <strong>right relationship</strong> with the digital world is complex. Edulogia helps make <strong>technology work for your family</strong>. We provide the <strong>guides, suggestions, and support</strong> needed to build <strong>healthy digital habits</strong> and leverage the best of what technology has to offer.",
+      "explore": "Explore Resources",
+      "read_blog": "Read Our Blog"
+    },
+    "featured_article": "Featured Article",
+    "featured_resource": "Featured Resource",
+    "view_all": "View all",
+    "read_article": "Read article",
+    "get_it_now": "Get it Now"
+  },
+  "blog": {
+    "title": "Insights & Articles",
+    "description": "Thoughts, research, and considerations on raising tech-literate kids in a distracted world.",
+    "read_full": "Read full article"
+  },
+  "resources": {
+    "title": "Resource Library",
+    "description": "Downloadable templates, interactive tutorials, and concrete guides to bridge the gap between technology and education at home.",
+    "search_placeholder": "Search for guides, templates, tutorials..."
+  }
+}
